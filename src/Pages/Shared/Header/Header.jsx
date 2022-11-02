@@ -6,8 +6,9 @@ const Header = () => {
 
     const manuItem = <>
         <>
-            <Link className='font-semibold' to={'/'}>Home</Link>
-            <Link to={'/'}>Service</Link>
+            <Link className='mr-5 font-semibold' to={'/'}>Home</Link>
+            <Link className='mr-5 font-semibold' to={'/signup'}>SignUp</Link>
+            <Link className='mr-5 font-semibold' to={'/login'}>Login</Link>
         </>
     </>
 
@@ -39,7 +40,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <button className="btn btn-outline btn-warning">Apointment</button>
+                    <button className="btn btn-outline btn-warning">Apointment</button>
 
                 </div>
             </div>
