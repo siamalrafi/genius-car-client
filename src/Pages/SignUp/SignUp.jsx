@@ -21,14 +21,10 @@ const SignUp = () => {
 
         createUser(email, password)
             .then((result) => {
-                // updateProfile
                 const user = result.user;
 
                 nameUpdate(name)
                     .then(() => {
-                        // console.log(auth.currentUser)
-
-                        // Email verification set up.
                         varifyEmail()
                             .then(() => {
 
@@ -38,11 +34,9 @@ const SignUp = () => {
                     .catch((error) => {
 
                     });
-
                 // ...
                 console.log(user);
             })
-
 
         // console.log('object', name, email, password);
     }
@@ -78,7 +72,7 @@ const SignUp = () => {
                                 <label className="label">
                                     <span className="label-text">Confirm Password</span>
                                 </label>
-                                <input name='password' type="text" placeholder="password" className="input input-bordered" />
+                                <input name='password' type="password" placeholder="password" className="input input-bordered" />
 
                             </div>
                             <div className="form-control mt-6">
